@@ -3,7 +3,7 @@
 
 
 ## Module 3 Project - NoSQL and Document-Oriented Databases
-NoSQL is a method we use to interact with a non-relational database. We learned how we can use SQL to interact with a relational database and now we see its counterpart today. 
+NoSQL is a method we use to interact with a non-relational database. We learned how we can use SQL to interact with a relational database and now we see its counterpart today.
 
 
 ## Learning Objectives
@@ -24,10 +24,10 @@ Note - the [JSON](https://github.com/LambdaSchool/Django-RPG/blob/master/testdat
 
 Reproduce the live lecture task of setting up and
 inserting the RPG data (specifically the `charactercreator_character`,
-`charactercreator_character_inventory`, `armory_item`, and `armory_weapon`) into 
-a MongoDB instance. Your documents in MongoDB should contain the character traits 
-(name, lvel, etc.) and skills (strength, wisdom, etc.) and a list of their items. 
-You should also store the weapons as a list in another key value pair (you will have 
+`charactercreator_character_inventory`, `armory_item`, and `armory_weapon`) into
+a MongoDB instance. Your documents in MongoDB should contain the character traits
+(name, lvel, etc.) and skills (strength, wisdom, etc.) and a list of their items.
+You should also store the weapons as a list in another key value pair (you will have
 duplicate items in both items and weapons) - see the example below.
 
 Mongo document example:
@@ -55,7 +55,9 @@ mongo_document = {
 Then answer the following question in your `README.md` file:
 * How was working with MongoDB different from working with PostgreSQL?
 * What was easier, and what was harder?
-
+  MongoDB is quite nice in the sense that the things are immediately related and doesn't require joining tables to find what connects to what. It also makes a bit more sense in terms of say increasing item sizes to me versus looking at a whole list of characters with x items like in SQL.
+## Answers
+  Accessing data is much easier in my opinion in mongodb and the formatting is much nicer as I come from a JS background. For a game I'd also imagine a nonsql approach would be better than an sql approach and that certainly feels the case when I look at the structure of MongoDb vs SQL. That's just my two cents though!
 Please turn in the MongoDB python file you used to generate the documents as well as your `README.md`. It is suggested to then revisit the first two modules, rework/complete things as needed, and review the content with
 fresh eyes the SQL approach. Compare and contrast, and come prepared to claass with questions  - the main topic will will discuss will be database differences and tradeoffs!
 
